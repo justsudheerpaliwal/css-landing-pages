@@ -1,0 +1,26 @@
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit; }
+
+html {
+  font-size: 62.5%; }
+
+body {
+  box-sizing: border-box; }
+
+.main__background {
+  background-image: url(../images/body-bg.jpg);
+  background-size: cover;
+  height: 100vh;
+  width: 100vw;
+  position: fixed; }
+  .main__background--overlay {
+    background-image: linear-gradient(to right, rgba(230, 101, 135, 0), #f09458);
+    position: fixed;
+    height: 100vh;
+    opacity: 0.6;
+    position: fixed;
+    width: 100vw; }

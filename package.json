@@ -5,10 +5,10 @@
   "main": "index.html",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "watch:sass": "node-sass sass/main.scss css/main.css -w",
+    "watch:sass": "node-sass scss/main.scss css/main.css -w",
     "devserver": "live-server",
     "start": "npm-run-all --parallel devserver watch:sass",
-    "compile:sass": "node-sass sass/main.scss css/main.css"
+    "compile:sass": "node-sass scss/main.scss css/main.css"
   },
   "devDependencies": {
     "node-sass": "^4.5.3",
