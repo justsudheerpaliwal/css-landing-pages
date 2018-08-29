@@ -1,16 +1,25 @@
-.main__background {
-    background-image: url(../images/body-bg.jpg);
-    background-size: cover;
-    height: 100vh;
-    width: 100vw;
-    position: fixed;
-    
-    &--overlay {
-        background-image: linear-gradient(to right, rgba(230, 101, 135, 0), rgba(240, 148, 88, 1) );
-        position: fixed;
+.main {
+    &__background{
+        background-image: url(../images/body-bg.jpg);
+        background-size: cover;
         height: 100vh;
-        opacity: 0.6;
-        position: fixed;
         width: 100vw;
+        position: fixed;
+        top: 0;
+        &--overlay {
+            background-image: linear-gradient(to right, rgba($color-primary, 0), rgba($color-secondary, 1) );
+            position: fixed;
+            height: 100vh;
+            opacity: 0.6;
+            position: fixed;
+            width: 100vw;
+            top: 0;
+        }
+    }
+
+    &__container {
+        position: relative;
+        margin: 10rem 10rem;
+        margin-bottom: 0rem; 
     }
 }
