@@ -6,10 +6,6 @@
   font-size: 1.4rem;
   cursor: pointer;
 
-  &:hover {
-    @include linearGradientPrimary;
-  }
-
   &::after {
       font-family: "Font Awesome 5 Free";
       padding-left: 8px; 
@@ -18,9 +14,11 @@
   }
   &--inverted {
     color: $color-light;
-    border: 2px solid $color-light;
+    border: 1px solid $color-light;
+    transition: all 0.3s ease-in;
     &:hover {
-      border: 2px solid transparent;
+      @include linearGradientPrimary;
+      border: 1px solid transparent;
     }
   }
 }

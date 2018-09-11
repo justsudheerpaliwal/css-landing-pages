@@ -1,6 +1,7 @@
 .hero {
   &__container {
-    height: 50%;
+    height: 600px;
+    margin: 0 auto;
     @include linearGradientPrimary;
     position: relative;
   }

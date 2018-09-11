@@ -18,3 +18,12 @@ body {
 
   }
 }
+
+.description {
+  font-size: 1.4rem;
+  line-height: 1.6em;
+  &__secondary {
+    font-weight: 300;
+    color: $color-muted-primary;
+  }
+}

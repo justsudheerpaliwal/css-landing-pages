@@ -310,6 +310,13 @@ body {
 .text--light {
   color: #ffffff; }
 
+.description {
+  font-size: 1.4rem;
+  line-height: 1.6em; }
+  .description__secondary {
+    font-weight: 300;
+    color: #777777; }
+
 .main__background {
   background-image: url(../images/body-bg.jpg);
   background-size: cover;
@@ -328,12 +335,13 @@ body {
 
 .main__container {
   position: relative;
-  width: 70%;
+  width: 80%;
   margin: 10rem auto;
   margin-bottom: 0rem; }
 
 .hero__container {
-  height: 50%;
+  height: 600px;
+  margin: 0 auto;
   background-image: linear-gradient(to right, #D66E87, #E39863);
   position: relative; }
 
@@ -360,8 +368,6 @@ body {
   font-weight: 300;
   font-size: 1.4rem;
   cursor: pointer; }
-  .button:hover {
-    background-image: linear-gradient(to right, #D66E87, #E39863); }
   .button::after {
     font-family: "Font Awesome 5 Free";
     padding-left: 8px;
@@ -369,6 +375,32 @@ body {
     content: "\f061"; }
   .button--inverted {
     color: #ffffff;
-    border: 2px solid #ffffff; }
+    border: 1px solid #ffffff;
+    transition: all 0.3s ease-in; }
     .button--inverted:hover {
-      border: 2px solid transparent; }
+      background-image: linear-gradient(to right, #D66E87, #E39863);
+      border: 1px solid transparent; }
+
+.feature__container {
+  background-color: #ffffff;
+  height: 400px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center; }
+
+.feature__single {
+  max-width: 25%; }
+
+.feature__heading {
+  margin: 1.7rem 0; }
+
+.feature__icon {
+  font-size: 3rem;
+  color: #D66E87;
+  display: inline-block;
+  padding: 1.5rem 1.5rem;
+  border: 1px solid #eeeeee;
+  border-radius: 2px; }
+  .feature__icon:hover {
+    background-image: linear-gradient(to right, #D66E87, #E39863);
+    color: #ffffff; }
