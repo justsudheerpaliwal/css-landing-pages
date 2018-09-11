@@ -1,0 +1,20 @@
+body {
+  font-family: "Poppins", sans-serif;
+}
+
+.text {
+  &--small {
+    font-size: 1.2rem;
+    font-weight: 300;
+  }
+
+  &--big {
+    font-size: 3.5rem;
+    font-weight: 500;
+  }
+
+  &--light {
+    color: $color-light;
+
+  }
+}

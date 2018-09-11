@@ -1,0 +1,26 @@
+.button {
+  padding: 1rem 3rem;
+  border-radius: 4rem;
+  display: inline-block;
+  font-weight: 300;
+  font-size: 1.4rem;
+  cursor: pointer;
+
+  &:hover {
+    @include linearGradientPrimary;
+  }
+
+  &::after {
+      font-family: "Font Awesome 5 Free";
+      padding-left: 8px; 
+      font-weight: 600;
+      content: "\f061";
+  }
+  &--inverted {
+    color: $color-light;
+    border: 2px solid $color-light;
+    &:hover {
+      border: 2px solid transparent;
+    }
+  }
+}
