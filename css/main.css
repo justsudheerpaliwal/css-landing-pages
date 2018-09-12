@@ -361,6 +361,25 @@ body {
 .nav__container {
   color: #ffffff; }
 
+.nav___hamburger {
+  opacity: 0.99;
+  z-index: 1;
+  cursor: pointer; }
+
+.nav__toggle {
+  display: none; }
+  .nav__toggle:checked ~ .nav__mobile {
+    opacity: 1; }
+
+.nav__mobile {
+  position: absolute;
+  right: 0px;
+  top: 0;
+  opacity: 0;
+  background-color: red;
+  width: 400px;
+  height: 200px; }
+
 .button {
   padding: 1rem 3rem;
   border-radius: 4rem;

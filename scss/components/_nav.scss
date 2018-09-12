@@ -2,4 +2,26 @@
   &__container {
     color: $color-light;
   }
+
+  &___hamburger {
+    opacity: 0.99;
+    z-index: 1;
+    cursor: pointer;
+  }
+
+  &__toggle {
+    display: none;
+    &:checked ~ .nav__mobile {
+      opacity: 1;
+    }
+  }
+  &__mobile {
+    position: absolute;
+    right: 0px;
+    top: 0;
+    opacity: 0;
+    background-color: red;
+    width: 400px;
+    height: 200px;
+  }
 }
