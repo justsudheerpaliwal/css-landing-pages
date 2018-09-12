@@ -1,14 +1,27 @@
 .feature {  
   &__container {
     background-color: $color-light;
-    height: 400px;
+
     display: flex;
+    padding: 40px 0;
     justify-content: space-around;
-    align-items: center;
+    align-items: flex-start;
+    @include media($xs) {
+      flex-direction: column;
+    }
   }
 
   &__single {
-    max-width: 25%;
+    flex-basis: 25%;
+    @include media($xs) {
+      margin: 1.5rem 1.5rem;
+      margin-bottom: 1rem;
+    }
+
+    &:hover .feature__icon {
+      @include linearGradientPrimary;
+      color: $color-light;
+    }
   }
 
   &__heading {
@@ -22,10 +35,5 @@
     padding : 1.5rem 1.5rem;
     border: 1px solid $color-muted-secondary;
     border-radius: 2px;
-
-    &:hover {
-      @include linearGradientPrimary;
-      color: $color-light;
-    }
   }
 }
