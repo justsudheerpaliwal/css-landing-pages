@@ -6,14 +6,14 @@
     padding: 40px 0;
     justify-content: space-around;
     align-items: flex-start;
-    @include media($xs) {
+    @include minMedia($xs) {
       flex-direction: column;
     }
   }
 
   &__single {
     flex-basis: 25%;
-    @include media($xs) {
+    @include minMedia($xs) {
       margin: 1.5rem 1.5rem;
       margin-bottom: 1rem;
     }

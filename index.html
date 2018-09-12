@@ -1,5 +1,6 @@
 <!Doctype <!DOCTYPE html>
 <html>
+
 <head>
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,25 +8,37 @@
     <link href="https://fonts.googleapis.com/css?family=Poppins:300,500,600" rel="stylesheet">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" type="text/css" media="screen" href="css/main.css" />
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU"
+        crossorigin="anonymous">
     <script src="scripts/index.js"></script>
 </head>
+
 <body>
-    <div class="main__background" ></div>
-    <div class="main__background--overlay" ></div>
+    <div class="main__background"></div>
+    <div class="main__background--overlay"></div>
     <div class="main__container">
         <header class="hero__container">
             <div class="hero__header-container">
                 <img src="images/logo.png" />
                 <div class="nav__container">
-                    <input id="navToggle" class="nav__toggle" type="checkbox" />
-                    <ul class="nav__mobile">
-                        <li class="nav__mobile__item"> sign </li>
-                        <li class="nav__mobile__item"> sign </li>
-                        <li class="nav__mobile__item"> sign </li>
-                        <li class="nav__mobile__item"> sign </li>
-                    </ul>
-                    <label for="navToggle" class="nav__hamburger fas fa-bars fa-2x"></i>
+                    <div class="nav--mobile">
+                        <input id="navToggle" class="nav__toggle" type="checkbox" />
+                        <ul class="nav__mobile-container">
+                            <li class="nav__mobile__item"> Features </li>
+                            <li class="nav__mobile__item"> Services </li>
+                            <li class="nav__mobile__item"> Product </li>
+                            <li class="nav__mobile__item"> Testimonial </li>
+                        </ul>
+                        <label for="navToggle" class="nav__hamburger fas fa-bars fa-2x"></i>
+                    </div>
+                    <div class="nav--big-screen">
+                        <ul class="nav__big-container">
+                            <li class="nav__big-item"> Features </li>
+                            <li class="nav__big-item"> Services </li>
+                            <li class="nav__big-item"> Product </li>
+                            <li class="nav__big-item"> Testimonial </li>
+                        </ul>   
+                    </div>
                 </div>
             </div>
             <div class="hero__content-container">
@@ -43,7 +56,8 @@
                     STUNNING VISUALS
                 </div>
                 <div class="description description__secondary">
-                    Here, I focus on a range of items and features that we use in life without giving them a second thought such as Coca Cola, body
+                    Here, I focus on a range of items and features that we use in life without giving them a second thought such as Coca Cola,
+                    body
                 </div>
             </div>
             <div class="feature__single">
@@ -65,7 +79,8 @@
                     PUNCTUALITY
                 </div>
                 <div class="description description__secondary">
-                    If you own an Iphone, you’ve probably already worked out how much fun it is to use it to watch movies-it has that nice big screen
+                    If you own an Iphone, you’ve probably already worked out how much fun it is to use it to watch movies-it has that nice big
+                    screen
                 </div>
             </div>
         </section>
@@ -74,4 +89,5 @@
         <i class="fas fa-arrow-up"></i>
     </a>
 </body>
+
 </html>

@@ -3,30 +3,61 @@
     color: $color-light;
   }
 
+  &__big-container {
+    display: none;
+    @include maxMedia($xs) {
+      display: flex;
+    }
+  }
+
+  &__big-item {
+    font-size: 1.4rem;
+    margin: 1rem;
+  }
+
+  &--mobile {
+    display: none;
+    @include minMedia($xs) {
+      display: block;
+    }
+  }
+
   &__hamburger {
-    opacity: 0.99;
-    z-index: 1;
+    z-index: 2;
+    position: relative;
     cursor: pointer;
   }
 
   &__toggle {
     display: none;
-    &:checked ~ .nav__mobile {
+    &:checked ~ .nav__mobile-container {
       transform: scaleX(1);
       opacity: 1;
     }
   }
-  &__mobile {
+  &__mobile-container {
     position: absolute;
     padding: 6rem 3rem;
+    z-index: 1;
     right: 0;
     top: 0;
     opacity: 0;
     transform: scaleX(0);
+    transform-origin: right;
     border-radius: 10px;
     border-top-right-radius: 0px;
     transition: opacity 0.3s ease-in, transform 0.3s ease-in;
-    background-color: darken($color-secondary, 0%);
+    background-color: darken($color-primary, 0%);
     width: 200px;
+  }
+
+  &__mobile__item {
+    padding: 1rem;
+    margin-bottom: 5px;
+    text-transform: uppercase;
+    font-size: 1.4rem;
+    letter-spacing: 2px;
+    border-radius: 3px;
+    background-color: rgba($color-secondary, 0.3);
   }
 }
